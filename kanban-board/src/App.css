@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.column {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 1;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Adicione uma media query para tornar o layout responsivo */
+@media (min-width: 768px) {
+  .board {
+    flex-direction: row;
+  }
+
+  .column {
+    width: 30%;
+    margin-right: 20px;
+  }
+}
